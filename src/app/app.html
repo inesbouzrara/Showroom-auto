@@ -1,0 +1,19 @@
+<app-head-bar></app-head-bar>
+
+<app-filter-bar
+  [hidden]="!!selectedCar"
+  (onFilter)="applyFilters($event)">
+</app-filter-bar>
+
+<app-search-bar
+  [hidden]="!!selectedCar"
+  [autos]="filteredAutos"
+  (onSelectCar)="selectCar($event)">
+</app-search-bar>
+
+@if (selectedCar) {
+  <app-car-details
+    [auto]="selectedCar"
+    (onBack)="back()">
+  </app-car-details>
+}

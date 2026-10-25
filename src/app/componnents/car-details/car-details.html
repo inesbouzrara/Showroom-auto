@@ -1,0 +1,22 @@
+<div class="car_details">
+    <div class="content">
+
+        <div class="header">
+            <h2>{{auto.brand}}, {{auto.model}}</h2>
+            <img [src]="`images/${auto.photo}`" [alt]="auto.brand+' '+auto.model">
+        </div>
+
+        <div class="right">
+            <div class="infos">
+                <p>Power : {{auto.power}}</p>
+                <p>Price : {{auto.price}} DT</p>
+                <p>Availability : {{auto.availability}} units in stock</p>
+                <p>{{auto.description}}</p>
+            </div>
+            <div class="btn">
+                <button (click)="back()">retourner</button>
+            </div>
+        </div>
+
+    </div>
+</div>

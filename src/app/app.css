@@ -1,0 +1,18 @@
+.car-details {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 24px;
+  background: white;
+  border-left: 6px solid #bd638c;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.car-details h2 {
+  margin-top: 0;
+  color: #1f3a5f;
+}
+
+.car-details p {
+  line-height: 1.7;
+}

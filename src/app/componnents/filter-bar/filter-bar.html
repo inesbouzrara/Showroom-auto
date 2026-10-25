@@ -1,0 +1,38 @@
+<div class="filter-container">
+
+  <button class="filter-toggle" (click)="toggleFilter()">
+    {{ isOpen ? '✕ Close filters' : '☰ Filter' }}
+  </button>
+
+  @if (isOpen) {
+    <div class="filter-options">
+
+      <div class="field">
+        <label>Minimum price</label>
+        <input type="number" [(ngModel)]="minPrice" placeholder="Minimum price">
+      </div>
+
+      <div class="field">
+        <label>Maximum price</label>
+        <input type="number" [(ngModel)]="maxPrice" placeholder="Maximum price">
+      </div>
+
+      <div class="field">
+        <label>Minimum power</label>
+        <input type="number" [(ngModel)]="minPower" placeholder="Minimum power">
+      </div>
+
+      <div class="field">
+        <label>Maximum power</label>
+        <input type="number" [(ngModel)]="maxPower" placeholder="Maximum power">
+      </div>
+
+      <div class="actions">
+        <button (click)="apply()">Apply filters</button>
+        <button class="reset" (click)="reset()">Reset</button>
+      </div>
+
+    </div>
+  }
+
+</div>
